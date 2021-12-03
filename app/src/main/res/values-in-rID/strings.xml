@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GithubAppSecondSubmission</string>
+    <string name="txt_name">Nama</string>
+    <string name="txt_type">Tipe</string>
+    <string name="txt_search">Cari User</string>
+    <string name="txt_imageview">ImageView</string>
+    <string name="txt_followers">Pengikut</string>
+    <string name="error_image">Gambar Error</string>
+    <string name="txt_following">Mengikuti</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_username">Nama Pengguna</string>
+    <string name="txt_company">Kompeni</string>
+    <string name="txt_location">Lokasi</string>
+    <string name="txt_favorite">Favorit</string>
+    <string name="txt_change_language">Ubah Bahasa</string>
+    <string name="txt_dark_mode">Mode Gelap</string>
+</resources>

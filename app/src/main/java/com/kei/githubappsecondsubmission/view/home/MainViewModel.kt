@@ -1,7 +1,7 @@
 package com.kei.githubappsecondsubmission.view.home
 
 import androidx.lifecycle.*
-import com.kei.githubappsecondsubmission.domain.data.model.ItemsItem
+import com.kei.githubappsecondsubmission.domain.data.model.UsersItem
 import com.kei.githubappsecondsubmission.domain.data.network.ApiResult
 import com.kei.githubappsecondsubmission.domain.repository.AppThemeRepository
 import com.kei.githubappsecondsubmission.domain.repository.UserRepository
@@ -18,7 +18,7 @@ class MainViewModel @Inject constructor(
     private val themeRepository: AppThemeRepository
 ) : ViewModel() {
     //pemisahan antara variable yang bisa di consume oleh class sendiri dan lainnya
-    private val _listUserLiveData = MutableLiveData<List<ItemsItem?>?>()
+    private val _listUserLiveData = MutableLiveData<List<UsersItem?>?>()
     val listUserLiveData get() = _listUserLiveData
 
     private val _loading: MutableLiveData<Boolean> = MutableLiveData()

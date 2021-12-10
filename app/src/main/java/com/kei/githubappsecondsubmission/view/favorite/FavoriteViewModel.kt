@@ -22,11 +22,11 @@ class FavoriteViewModel @Inject constructor(private val favoriteRepository: Favo
         getDataListFavorite()
     }
 
-    private fun getDataListFavorite() {
+   fun getDataListFavorite() {
         viewModelScope.launch {
             favoriteRepository.getListFavorite().collect {
                 _favoriteLiveData.postValue(it)
             }
         }
-    }
+   }
 }

@@ -16,7 +16,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.kei.githubappsecondsubmission.R
 import com.kei.githubappsecondsubmission.databinding.ActivityMainBinding
-import com.kei.githubappsecondsubmission.domain.data.model.ItemsItem
+import com.kei.githubappsecondsubmission.domain.data.model.UsersItem
 import com.kei.githubappsecondsubmission.view.detail.dashboard.DetailActivity
 import com.kei.githubappsecondsubmission.view.favorite.FavoriteActivity
 import dagger.hilt.android.AndroidEntryPoint
@@ -111,7 +111,7 @@ class MainActivity : AppCompatActivity() {
                     //kirim data ke detail
                     val intent = Intent(this@MainActivity, DetailActivity::class.java)
                     mainAdapter.setItemClickCallback(object : OnItemClickCallback {
-                        override fun onItemClicked(user: ItemsItem?) {
+                        override fun onItemClicked(user: UsersItem?) {
                             intent.putExtra(DetailActivity.EXTRA_DATA, user)
                             startActivity(intent)
                         }

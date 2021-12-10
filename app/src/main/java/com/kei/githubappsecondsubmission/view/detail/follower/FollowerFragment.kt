@@ -34,12 +34,12 @@ class FollowerFragment : Fragment() {
         followerViewModel.error.observe(viewLifecycleOwner, {
             if (it == null){
                 followerBinding.apply {
-                    ivErrorFollower.visibility = View.GONE
-                    rvFollower.visibility = View.VISIBLE  }
+                    ivErrorFollowerPage.visibility = View.GONE
+                    rvFollowerPage.visibility = View.VISIBLE  }
             }else{
                 followerBinding.apply {
-                    ivErrorFollower.visibility = View.VISIBLE
-                    rvFollower.visibility = View.GONE
+                    ivErrorFollowerPage.visibility = View.VISIBLE
+                    rvFollowerPage.visibility = View.GONE
                 }
             }
         })
@@ -49,13 +49,13 @@ class FollowerFragment : Fragment() {
         followerViewModel.loading.observe(viewLifecycleOwner, { isLoading ->
             if (isLoading){
                 followerBinding.apply {
-                    pbFollower.visibility = View.VISIBLE
-                    rvFollower.visibility = View.GONE
+                    pbFollowerPage.visibility = View.VISIBLE
+                    rvFollowerPage.visibility = View.GONE
                 }
             }else{
                 followerBinding.apply {
-                    pbFollower.visibility = View.GONE
-                    rvFollower.visibility = View.VISIBLE
+                    pbFollowerPage.visibility = View.GONE
+                    rvFollowerPage.visibility = View.VISIBLE
                 }
             }
         })
@@ -68,16 +68,16 @@ class FollowerFragment : Fragment() {
             followerLiveData.observe(viewLifecycleOwner, {it ->
                 if ((it?.size ?: 0) == 0) {
                     followerBinding.apply {
-                        ivErrorFollower.visibility = View.VISIBLE
-                        rvFollower.visibility = View.GONE
+                        ivErrorFollowerPage.visibility = View.VISIBLE
+                        rvFollowerPage.visibility = View.GONE
                     }
                 } else {
                     followerBinding.apply {
-                        ivErrorFollower.visibility = View.GONE
-                        rvFollower.visibility = View.VISIBLE
+                        ivErrorFollowerPage.visibility = View.GONE
+                        rvFollowerPage.visibility = View.VISIBLE
 
                         val mainAdapter = MainAdapter(it)
-                        rvFollower.adapter = mainAdapter
+                        rvFollowerPage.adapter = mainAdapter
                     }
                 }
             })
@@ -90,7 +90,7 @@ class FollowerFragment : Fragment() {
     }
 
     private fun showFollower() {
-        followerBinding.rvFollower.apply {
+        followerBinding.rvFollowerPage.apply {
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(context)
             adapter = MainAdapter(listOf())

@@ -14,12 +14,12 @@ data class ResponseUser(
 	val incompleteResults: Boolean,
 
 	@field:SerializedName("items")
-	val items: List<ItemsItem>
+	val items: List<UsersItem>
 ) : Parcelable
 
 
 @Parcelize
-data class ItemsItem(
+data class UsersItem(
 
 	@field:SerializedName("login")
 	val login: String,

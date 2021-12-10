@@ -12,14 +12,14 @@ import com.google.android.material.tabs.TabLayoutMediator
 import com.kei.githubappsecondsubmission.R
 import com.kei.githubappsecondsubmission.adater.ViewPagerAdapter
 import com.kei.githubappsecondsubmission.databinding.ActivityDetailBinding
-import com.kei.githubappsecondsubmission.domain.data.model.ItemsItem
+import com.kei.githubappsecondsubmission.domain.data.model.UsersItem
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class DetailActivity : AppCompatActivity() {
     private lateinit var detailBinding : ActivityDetailBinding
     private lateinit var detailViewModel: DetailViewModel
-    private var user : ItemsItem? = null
+    private var user : UsersItem? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -74,11 +74,12 @@ class DetailActivity : AppCompatActivity() {
                 ).into(ivDetail)
 
                 tvNameDetail.text = detail?.name ?: "NO AVAILABLE"
-                tvCompanyDetail.text = detail?.company ?: "NO AVAILABLE"
-                tvUsernameDetail.text = detail?.login ?: "NO AVAILABLE"
-                tvLocationDetail.text = detail?.location ?: "NO AVAILABLE"
-                tvFollowersDetail.text= (detail?.followers?: "NO AVAILABLE").toString()
-                tvFollowingDetail.text= (detail?.following?: "NO AVAILABLE").toString()
+                tvDetailCompany.text = detail?.company ?: "NO AVAILABLE"
+                tvDetailUsername.text = detail?.login ?: "NO AVAILABLE"
+                tvDetailLocation.text = detail?.location ?: "NO AVAILABLE"
+                tvDetailRepository.text = (detail?.public_repos?: "NO AVAILABLE").toString()
+                tvDetailFollowers.text= (detail?.followers?: "NO AVAILABLE").toString()
+                tvDetailFollowing.text= (detail?.following?: "NO AVAILABLE").toString()
             }
             detailViewModel.showFavorite(detail)
             detailBinding.ivFavoriteDetail.setOnClickListener {

@@ -14,4 +14,5 @@
     <string name="txt_favorite">Favorite</string>
     <string name="txt_change_language">Change Language</string>
     <string name="txt_dark_mode">Dark Mode</string>
+    <string name="txt_repository">Repository</string>
 </resources>

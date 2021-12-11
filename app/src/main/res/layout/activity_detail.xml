@@ -21,44 +21,44 @@
 
     <TextView
         android:id="@+id/tvDetailUsername"
-        style="@style/textLight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
         android:text="@string/txt_username"
+        style="@style/textLight"
         app:layout_constraintBottom_toBottomOf="@+id/tvUsernameLebelDetail"
         app:layout_constraintStart_toEndOf="@+id/tvUsernameLebelDetail"
         app:layout_constraintTop_toTopOf="@+id/tvUsernameLebelDetail" />
 
     <TextView
         android:id="@+id/tvNameDetail"
-        style="@style/textLight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:text="@string/txt_name"
+        style="@style/textLight"
         app:layout_constraintBottom_toBottomOf="@+id/tvNameLabelDetail"
         app:layout_constraintStart_toEndOf="@+id/tvNameLabelDetail"
         app:layout_constraintTop_toTopOf="@+id/tvNameLabelDetail" />
 
     <TextView
         android:id="@+id/tvDetailCompany"
-        style="@style/textLight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
         android:text="@string/txt_company"
+        style="@style/textLight"
         app:layout_constraintBottom_toBottomOf="@+id/tvComapnyLabelDetail"
         app:layout_constraintStart_toEndOf="@+id/tvComapnyLabelDetail"
         app:layout_constraintTop_toTopOf="@+id/tvComapnyLabelDetail" />
 
     <TextView
         android:id="@+id/tvDetailLocation"
-        style="@style/textLight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:text="@string/txt_location"
+        style="@style/textLight"
         app:layout_constraintBottom_toBottomOf="@+id/tvLocationLabelDetail"
         app:layout_constraintStart_toEndOf="@+id/tvLocationLabelDetail"
         app:layout_constraintTop_toTopOf="@+id/tvLocationLabelDetail" />
@@ -89,22 +89,22 @@
 
     <TextView
         android:id="@+id/tvDetailFollowing"
-        style="@style/textLight"
+        android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/_16dp"
-        android:gravity="center"
         android:text="@string/txt_following"
+        style="@style/textLight"
         app:layout_constraintBottom_toTopOf="@+id/tvFollowingLabelDetail"
         app:layout_constraintEnd_toEndOf="@+id/tvFollowingLabelDetail"
         app:layout_constraintStart_toStartOf="@+id/tvFollowingLabelDetail" />
 
     <TextView
         android:id="@+id/tvDetailFollowers"
-        style="@style/textLight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/txt_followers"
+        style="@style/textLight"
         app:layout_constraintBottom_toBottomOf="@+id/tvDetailFollowing"
         app:layout_constraintEnd_toEndOf="@+id/tvFollowersLabelDetail"
         app:layout_constraintStart_toStartOf="@+id/tvFollowersLabelDetail"
@@ -122,8 +122,7 @@
         app:tabGravity="fill"
         app:tabIndicatorHeight="@dimen/_5dp"
         app:tabMaxWidth="@dimen/_0dp"
-        app:tabMode="fixed"
-        app:tabTextColor="@color/white" />
+        app:tabMode="fixed"/>
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/vpDetail"
@@ -139,45 +138,45 @@
 
     <TextView
         android:id="@+id/tvNameLabelDetail"
-        style="@style/textLight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:text="@string/txt_name"
+        style="@style/textLight"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivDetail" />
 
     <TextView
         android:id="@+id/tvUsernameLebelDetail"
-        style="@style/textLight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
         android:text="@string/txt_username"
+        style="@style/textLight"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvNameLabelDetail" />
 
     <TextView
         android:id="@+id/tvComapnyLabelDetail"
-        style="@style/textLight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
         android:text="@string/txt_company"
+        style="@style/textLight"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvUsernameLebelDetail" />
 
     <TextView
         android:id="@+id/tvLocationLabelDetail"
-        style="@style/textLight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
         android:text="@string/txt_location"
+        style="@style/textLight"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvComapnyLabelDetail" />
 
@@ -193,7 +192,6 @@
 
     <TextView
         android:id="@+id/tvFollowersLabelDetail"
-        style="@style/textLight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -207,11 +205,11 @@
 
     <TextView
         android:id="@+id/tvDetailRepository"
-        style="@style/textLight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:text="@string/txt_repository"
+        style="@style/textLight"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="@+id/tvDetailFollowers"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="@+id/textView2"
@@ -220,17 +218,16 @@
 
     <TextView
         android:id="@+id/textView2"
-        style="@style/textLight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="@string/txt_repository"
+        style="@style/textLight"
         app:layout_constraintBottom_toBottomOf="@+id/tvFollowersLabelDetail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDetailRepository"
         app:layout_constraintVertical_bias="1.0" />
-
     <ImageView
         android:id="@+id/ivFavoriteDetail"
         android:layout_width="wrap_content"

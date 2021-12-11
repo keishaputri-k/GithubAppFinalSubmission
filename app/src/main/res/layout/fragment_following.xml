@@ -6,13 +6,14 @@
     android:id="@+id/clFollowing"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/_20dp"
     style="@style/backgroundLight"
     tools:context=".view.detail.following.FollowingFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvFollowingPage"
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -82,7 +82,6 @@ class FollowerFragment : Fragment() {
                 }
             })
         }
-
     }
 
     private fun setViewModelProvider() {
